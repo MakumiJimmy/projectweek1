@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roasta Cafe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Fixed 'rel' attribute -->
+</head>
+<body>
+    <div class="bg-overlay">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Roasta Cafe Menu</h2>
+
+            
+            <div class="accordion mb-5" id="menuAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Biscuits
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Chocolate Chip Cookies - $2.00</li>
+                                <li>Oatmeal Raisin Cookies - $1.80</li>
+                                <li>Shortbread - $2.50</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Appetizers
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#menuAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Garlic Bread - $3.00</li>
+                                <li>Bruschetta - $4.00</li>
+                                <li>Cheese Sticks - $3.50</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Selection as Six Columns -->
+            <h3 class="text-center mb-4">Our Coffee Selection</h3>
+            <div class="row">
+                <!-- Coffee 1: Latte -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/dawa.jpg" class="card-img-top" alt="Latte">
+                        <div class="card-body">
+                            <h5 class="card-title">Latte</h5>
+                            <p class="card-text">$4.00</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#coffeeModal1">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Coffee 1: Latte -->
+                <div class="modal fade" id="coffeeModal1" tabindex="-1" aria-labelledby="coffeeModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="coffeeModalLabel1">Latte</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                A delicious blend of espresso and steamed milk. Price: $4.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee 2: Cappuccino -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/capchino.jpg" class="card-img-top" alt="Cappuccino">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text">$3.50</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#coffeeModal2">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Coffee 2: Cappuccino -->
+                <div class="modal fade" id="coffeeModal2" tabindex="-1" aria-labelledby="coffeeModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="coffeeModalLabel2">Cappuccino</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Rich espresso with frothed milk and a sprinkle of cocoa. Price: $3.50
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee 3: Espresso -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/Mocha_coffee.jpg" class="card-img-top" alt="Espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Espresso</h5>
+                            <p class="card-text">$2.50</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#coffeeModal3">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Coffee 3: Espresso -->
+                <div class="modal fade" id="coffeeModal3" tabindex="-1" aria-labelledby="coffeeModalLabel3" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="coffeeModalLabel3">Espresso</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                A strong and bold espresso shot. Price: $2.50
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee 4: Mocha -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/ice cofee.jpg" class="card-img-top" alt="Mocha">
+                        <div class="card-body">
+                            <h5 class="card-title">Mocha</h5>
+                            <p class="card-text">$4.50</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#coffeeModal4">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Coffee 4: Mocha -->
+                <div class="modal fade" id="coffeeModal4" tabindex="-1" aria-labelledby="coffeeModalLabel4" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="coffeeModalLabel4">Mocha</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                A rich mix of chocolate and coffee. Price: $4.50
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee 5: Americano -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/latte.jpg" class="card-img-top" alt="Americano">
+                        <div class="card-body">
+                            <h5 class="card-title">Americano</h5>
+                            <p class="card-text">$3.00</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#coffeeModal5">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Coffee 5: Americano -->
+                <div class="modal fade" id="coffeeModal5" tabindex="-1" aria-labelledby="coffeeModalLabel5" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="coffeeModalLabel5">Americano</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                A classic coffee drink made with espresso and hot water. Price: $3.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/coffe logos.jpg" class="logo" width="100" alt="Roasta Cafe Logo">
+                        <h2>You are welcome to Roasta Cafe</h2>
+                    </div>
+                    <div class="col">
+                        <h3>Location</h3>
+                        <p>Accra Road</p>
+                        <p>Whitefield, Nairobi</p>
+                    </div>
+                    <div class="col">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Newsletter</h3>
+                        <form>
+                            <input type="email" placeholder="Enter e-mail id" required>
+                            <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
